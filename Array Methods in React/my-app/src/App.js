@@ -4,6 +4,8 @@ import Arraylist from "./Components/Arralist";
 import ArrayFilter from "./Components/ArrayFilter";
 import ArrayNumber from "./Components/ArrayNumber";
 import ArrayForEach from "./Components/ArrayForEach";
+import ArrayFind from "./Components/ArrayFind";
+import ArrayFindIndex from "./Components/ArrayFindIndex";
 
 function App() {
   const name = [
@@ -31,6 +33,8 @@ function App() {
         <ArrayFilter nameList={name} />
         <ArrayNumber numberList={number} />
         <ArrayForEach nameList={name} />
+        <ArrayFind nameList={name} numberList={number} />
+        <ArrayFindIndex nameList={name} />
       </header>
     </div>
   );
