@@ -3,6 +3,7 @@ import "./App.css";
 import Arraylist from "./Components/Arralist";
 import ArrayFilter from "./Components/ArrayFilter";
 import ArrayNumber from "./Components/ArrayNumber";
+import ArrayForEach from "./Components/ArrayForEach";
 
 function App() {
   const name = [
@@ -29,6 +30,7 @@ function App() {
         <Arraylist nameList={name} />
         <ArrayFilter nameList={name} />
         <ArrayNumber numberList={number} />
+        <ArrayForEach nameList={name} />
       </header>
     </div>
   );
