@@ -1,8 +1,9 @@
 import logo from "./logo.svg";
 import "./App.css";
+import OrderdListItem from "./Components/OrderdListItem";
 
 function App() {
-  const name = [
+  const nameList = [
     "jonas",
     "martha",
     "mickel",
@@ -22,6 +23,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <OrderdListItem itemList={nameList} />
       </header>
     </div>
   );
