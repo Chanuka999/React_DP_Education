@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import OrderdListItem from "./Components/OrderdListItem";
+import UnorderdListItem from "./Components/UnorderdListItem";
 
 function App() {
   const nameList = [
@@ -24,6 +25,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <OrderdListItem itemList={nameList} />
+        <UnorderdListItem itemList={nameList} />
       </header>
     </div>
   );
