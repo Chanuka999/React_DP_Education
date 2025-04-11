@@ -12,6 +12,7 @@ import ArraySort from "./Components/ArraySort";
 import ArraySlice from "./Components/ArraySlice";
 import ArraySplice from "./Components/ArraySplice";
 import ArrayFlat from "./Components/ArrayFlat";
+import ArrayFlatMap from "./Components/ArrayFlatMap";
 
 function App() {
   const name = [
@@ -47,6 +48,7 @@ function App() {
         <ArraySlice nameList={name} />
         <ArraySplice nameList={name} />
         <ArrayFlat nameList={name} />
+        <ArrayFlatMap nameList={name} />
 
         {/* <ArrayFilter nameList={name} />
         <ArrayNumber numberList={number} />
