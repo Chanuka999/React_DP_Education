@@ -1,0 +1,26 @@
+/* Student.css */
+
+.student-card {
+  border: 2px solid #4caf50;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 10px auto;
+  width: 250px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.student-card ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.student-card li {
+  padding: 4px 0;
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+}
