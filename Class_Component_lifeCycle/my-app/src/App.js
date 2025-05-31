@@ -6,10 +6,9 @@ import Search from "./Search";
 class App extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       name: "chanuka",
-      age: "23",
+      age: 23,
     };
   }
 
@@ -21,18 +20,6 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          {/* <SearchBar search={changeSearch} /> */}
-          {/* <p>{test}</p>
-              {searchStudent.map((student, index) => {
-                return (
-                  <StudentCrad
-                    key={index}
-                    name={student.name}
-                    age={student.age}
-                    town={student.town}
-                  /> */}
-          {/* );
-              })} */}
           <h1>Hello</h1>
           <Search onSearch={this.onSearch} />
           <Student name={name} age={age} />

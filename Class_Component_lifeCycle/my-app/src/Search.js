@@ -9,7 +9,6 @@ class Search extends Component {
   }
 
   onSearch = (event) => {
-    console.log(event.target.value);
     this.setState({ text: event.target.value });
     this.props.onSearch(event);
   };
@@ -18,10 +17,9 @@ class Search extends Component {
     return (
       <div>
         <input type="text" onChange={this.onSearch} />
-        <p>{this.state.text}</p>
+        <p>you typed:{this.state.text}</p>
       </div>
     );
   }
 }
-
 export default Search;
