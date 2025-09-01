@@ -1,8 +1,15 @@
 import logo from "./logo.svg";
 import "./App.css";
-import FetchMethod from "./FetchMethod";
-import AxiosMethod from "./AxiosMethod";
-import HttpMethod from "./HttpMethod";
+//import FetchMethod from "./FetchMethod";
+//import AxiosMethod from "./AxiosMethod";
+//import HttpMethod from "./HttpMethod";
+import ReactQuery from "./ReactQuery";
+
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import GraphqlMethod from "./GraphqlMethod";
+import ApolloClientProvider from "./ApolloClient";
+
+const queryClient = new QueryClient();
 
 function App() {
   return (
@@ -14,7 +21,13 @@ function App() {
         </p>
         {/* <FetchMethod />
         <AxiosMethod /> */}
-        <HttpMethod />
+        {/* <HttpMethod /> */}
+        {/* <QueryClientProvider client={queryClient}>
+          <ReactQuery />
+        </QueryClientProvider> */}
+        <ApolloClientProvider>
+          <GraphqlMethod />
+        </ApolloClientProvider>
       </header>
     </div>
   );

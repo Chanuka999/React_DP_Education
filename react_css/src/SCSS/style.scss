@@ -1,0 +1,25 @@
+$box-color: #28cf12;
+
+@function light($color, $amount) {
+  @return light($color, $amount * 1%);
+}
+
+.External-Box-3 {
+  padding: 10px 15px;
+  //   background-color: #0777f7;
+  //background-color: $box-color;
+  background-color: light($box-color, 20);
+  border-radius: 5px;
+}
+
+.External-text-3 {
+  color: #fff;
+}
+
+.button-3 {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #f78307;
+  color: #000;
+  font: weight 600;
+}
