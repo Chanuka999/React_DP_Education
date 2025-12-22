@@ -6,6 +6,8 @@ import ArrayMap from "./components/ArrayMap";
 import Nav from "./page/nav";
 import ArrayList from "./page/ArrayList";
 import ArrayFilter from "./components/ArrayFilter";
+import ArrayReduce from "./components/ArrayReduce";
+import ArrayForEach from "./components/ArrayForEach";
 
 function App() {
   const nameList = [
@@ -18,6 +20,8 @@ function App() {
     "maichel",
     "martha",
   ];
+
+  const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   return (
     <>
       <Routes>
@@ -29,6 +33,8 @@ function App() {
       <Routes path="/list">
         <Route path="/map" element={<ArrayMap nameList={nameList} />} />
         <Route path="/filter" element={<ArrayFilter nameList={nameList} />} />
+        <Route path="/reduce" element={<ArrayReduce numberList={numbers} />} />
+        <Route path="/foreach" element={<ArrayForEach nameList={nameList} />} />
       </Routes>
     </>
   );
