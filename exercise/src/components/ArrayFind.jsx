@@ -19,7 +19,7 @@ const ArrayFind = ({ nameList, numberList }) => {
       <p>{num}</p>
 
       <br />
-      <br />
+
       <hr />
 
       {nameList.map((name, index) => {
