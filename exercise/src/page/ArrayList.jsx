@@ -8,6 +8,8 @@ const ArrayList = () => {
       <Link to="/filter">Array Filter</Link>
       <Link to="/reduce">Array Reduce</Link>
       <Link to="/foreach">Array ForEach</Link>
+      <Link to="/find">Array Find</Link>
+      <Link to="/findIndex">Array FindIndex</Link>
     </div>
   );
 };

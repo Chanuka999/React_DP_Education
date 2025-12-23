@@ -8,6 +8,8 @@ import ArrayList from "./page/ArrayList";
 import ArrayFilter from "./components/ArrayFilter";
 import ArrayReduce from "./components/ArrayReduce";
 import ArrayForEach from "./components/ArrayForEach";
+import ArrayFind from "./components/ArrayFind";
+import ArrayFindIndex from "./components/ArrayFindIndex";
 
 function App() {
   const nameList = [
@@ -35,6 +37,14 @@ function App() {
         <Route path="/filter" element={<ArrayFilter nameList={nameList} />} />
         <Route path="/reduce" element={<ArrayReduce numberList={numbers} />} />
         <Route path="/foreach" element={<ArrayForEach nameList={nameList} />} />
+        <Route
+          path="/find"
+          element={<ArrayFind nameList={nameList} numberList={numbers} />}
+        />
+        <Route
+          path="/findIndex"
+          element={<ArrayFindIndex nameList={nameList} />}
+        />
       </Routes>
     </>
   );
