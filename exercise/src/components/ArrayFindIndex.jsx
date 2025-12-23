@@ -1,4 +1,7 @@
 import React from "react";
+import ArraySome from "./ArraySome";
+import ArrayEvery from "./ArrayEvery";
+import ArraySort from "./ArraySort";
 
 const ArrayFindIndex = ({ nameList }) => {
   const fname = nameList.findIndex((name) => name.includes("c"));
@@ -20,6 +23,9 @@ const ArrayFindIndex = ({ nameList }) => {
       </table>
       <hr />
       <p>{fname}</p>
+      <ArraySome names={nameList} />
+      <ArrayEvery names={nameList} />
+      <ArraySort names={nameList} />
     </div>
   );
 };
