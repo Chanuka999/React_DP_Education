@@ -2,6 +2,10 @@ import React from "react";
 import ArraySome from "./ArraySome";
 import ArrayEvery from "./ArrayEvery";
 import ArraySort from "./ArraySort";
+import ArraySlice from "./ArraySlice";
+import ArraySplice from "./ArraySplice";
+import ArrayFloat from "./ArrayFloat";
+import ArrayFlatMap from "./ArrayFlatMap";
 
 const ArrayFindIndex = ({ nameList }) => {
   const fname = nameList.findIndex((name) => name.includes("c"));
@@ -26,6 +30,10 @@ const ArrayFindIndex = ({ nameList }) => {
       <ArraySome names={nameList} />
       <ArrayEvery names={nameList} />
       <ArraySort names={nameList} />
+      <ArraySlice names={nameList} />
+      <ArraySplice names={nameList} />
+      <ArrayFloat names={nameList} />
+      <ArrayFlatMap names={nameList} />
     </div>
   );
 };
