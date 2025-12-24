@@ -3,7 +3,7 @@ import Search from "./Search";
 import StudentCard from "./StudentCard";
 
 const StudentMain = () => {
-  const [text, setText] = useState("");
+  const [text, setText] = useState("c");
 
   const StudentList = [
     { name: "chanuka", age: "23", city: "laxapana" },
@@ -21,7 +21,7 @@ const StudentMain = () => {
   };
   return (
     <div className="student-list">
-      <Search onSearch={searchHandle} />
+      <Search onSearch={searchHandle} searchValue={text} />
       <div>
         <p>{text}</p>
       </div>
