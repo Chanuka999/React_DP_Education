@@ -3,7 +3,7 @@ import Search from "./Search";
 import StudentCard from "./StudentCard";
 
 const StudentMain = () => {
-  const [text, setText] = useState("c");
+  const [text, setText] = useState("");
 
   const StudentList = [
     { name: "chanuka", age: "23", city: "laxapana" },
