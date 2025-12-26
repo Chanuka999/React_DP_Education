@@ -7,6 +7,7 @@ const Nav = () => {
       <Link to="/student">Student</Link>
       <Link to="/list">Arrays</Link>
       <Link to="/fragment">Fragment</Link>
+      <Link to="/controll">ControllComponent</Link>
     </div>
   );
 };
