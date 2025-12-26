@@ -11,6 +11,7 @@ import ArrayForEach from "./components/ArrayForEach";
 import ArrayFind from "./components/ArrayFind";
 import ArrayFindIndex from "./components/ArrayFindIndex";
 import Fragment from "./components/fragment/Fragment";
+import Controll from "./components/controll/controll";
 
 function App() {
   const nameList = [
@@ -32,6 +33,7 @@ function App() {
         <Route path="/student" element={<StudentMain />} />
         <Route path="/list" element={<ArrayList />} />
         <Route path="/fragment" element={<Fragment nameList={nameList} />} />
+        <Route path="/controll" element={<Controll />} />
       </Routes>
 
       <Routes path="/list">
