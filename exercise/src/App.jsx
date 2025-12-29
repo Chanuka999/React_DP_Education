@@ -12,6 +12,7 @@ import ArrayFind from "./components/ArrayFind";
 import ArrayFindIndex from "./components/ArrayFindIndex";
 import Fragment from "./components/fragment/Fragment";
 import Controll from "./components/controll/controll";
+import Higher from "./components/higherOrder.jsx/higher";
 
 function App() {
   const nameList = [
@@ -34,6 +35,7 @@ function App() {
         <Route path="/list" element={<ArrayList />} />
         <Route path="/fragment" element={<Fragment nameList={nameList} />} />
         <Route path="/controll" element={<Controll />} />
+        <Route path="/higher" element={<Higher />} />
       </Routes>
 
       <Routes path="/list">
