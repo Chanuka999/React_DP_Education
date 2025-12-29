@@ -8,6 +8,7 @@ const Nav = () => {
       <Link to="/list">Arrays</Link>
       <Link to="/fragment">Fragment</Link>
       <Link to="/controll">ControllComponent</Link>
+      <Link to="/higher">higher-order</Link>
     </div>
   );
 };
