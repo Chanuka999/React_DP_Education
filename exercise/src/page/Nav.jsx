@@ -9,6 +9,7 @@ const Nav = () => {
       <Link to="/fragment">Fragment</Link>
       <Link to="/controll">ControllComponent</Link>
       <Link to="/higher">higher-order</Link>
+      <Link to="/form">from</Link>
     </div>
   );
 };
