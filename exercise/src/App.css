@@ -1,3 +1,7 @@
+body {
+  display: flex;
+}
+
 .student-list {
   position: absolute;
   top: 10px;
@@ -40,4 +44,10 @@ ol {
 
 li {
   width: 100%;
+}
+
+.box {
+  border: 2px solid white;
+  padding: 10px 30px;
+  justify-content: center;
 }

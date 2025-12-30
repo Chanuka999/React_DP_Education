@@ -14,6 +14,10 @@ import Fragment from "./components/fragment/Fragment";
 import Controll from "./components/controll/controll";
 import Higher from "./components/higherOrder.jsx/higher";
 import Form from "./components/forms/Form";
+import Hooks from "./components/hooks/Hooks";
+import UseState from "./components/hooks/UseState";
+import UseEffect from "./components/hooks/UseEffect";
+import UseContex from "./components/hooks/UseContex";
 
 function App() {
   const nameList = [
@@ -38,6 +42,7 @@ function App() {
         <Route path="/controll" element={<Controll />} />
         <Route path="/higher" element={<Higher />} />
         <Route path="/form" element={<Form />} />
+        <Route path="/hooks" element={<Hooks />} />
       </Routes>
 
       <Routes path="/list">
@@ -53,6 +58,12 @@ function App() {
           path="/findIndex"
           element={<ArrayFindIndex nameList={nameList} />}
         />
+      </Routes>
+
+      <Routes path="/hooks">
+        <Route path="/useState" element={<UseState />} />
+        <Route path="/useEffect" element={<UseEffect />} />
+        <Route path="/useContext" element={<UseContex />} />
       </Routes>
     </>
   );
