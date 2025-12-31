@@ -18,6 +18,7 @@ import Hooks from "./components/hooks/Hooks";
 import UseState from "./components/hooks/UseState";
 import UseEffect from "./components/hooks/UseEffect";
 import UseContex from "./components/hooks/UseContex";
+import UseReduce from "./components/hooks/UseReduce";
 
 function App() {
   const nameList = [
@@ -64,6 +65,7 @@ function App() {
         <Route path="/useState" element={<UseState />} />
         <Route path="/useEffect" element={<UseEffect />} />
         <Route path="/useContext" element={<UseContex />} />
+        <Route path="/useReduce" element={<UseReduce />} />
       </Routes>
     </>
   );
