@@ -5,17 +5,19 @@ const Hooks = () => {
   return (
     <div>
       <h1>react hooks</h1>
-      <ul>
-        <li>
-          <Link to="/useState">useSatate</Link>
-        </li>
-        <li>
-          <Link to="/useEffect">useEffect</Link>
-        </li>
-        <li>
-          <Link to="/useContext">useContext</Link>
-        </li>
-      </ul>
+
+      <div>
+        <Link to="/useState">useSatate</Link>
+      </div>
+      <div>
+        <Link to="/useEffect">useEffect</Link>
+      </div>
+      <div>
+        <Link to="/useContext">useContext</Link>
+      </div>
+      <div>
+        <Link to="/useReduce">useReduce</Link>
+      </div>
     </div>
   );
 };
