@@ -18,6 +18,9 @@ const Hooks = () => {
       <div>
         <Link to="/useReduce">useReduce</Link>
       </div>
+      <div>
+        <Link to="/useMemo">useMemo</Link>
+      </div>
     </div>
   );
 };
